@@ -1,2 +1,2 @@
-# ka_papa
+# Ka PAPA
 Ka Papa public education platform

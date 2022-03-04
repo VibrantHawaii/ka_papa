@@ -167,14 +167,14 @@ body {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
+/* Create an active/current tabLink class */
 .tab button.active {
   background-color: #F7E7D5;
   text-decoration: underline;
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabContent {
   background-color: #E1CCB7;
   display: none;
   padding: 6px 30px;
@@ -183,12 +183,12 @@ body {
   text-align: center;
 }
 
-.tabtitle {
+.tabTitle {
   font-size: 16px;
   font-weight: bold;
 }
 
-.lecture-attachment p, .post p, .block.rich_text p .tabcontent .overview p {
+.lecture-attachment p, .post p, .block.rich_text p .tabContent .overview p {
   font-size: 12px;
   font-style: italic;
 }
@@ -248,11 +248,11 @@ body {
   width: 260px;
 }
 
-.lecture-attachment p, .post p, .block.rich_text p .tabcontent .overview p {
+.lecture-attachment p, .post p, .block.rich_text p .tabContent .overview p {
   font-style:normal;
 }
 
-.lecture-attachment p, .post p, .block.rich_text p .tabcontent .overview p {
+.lecture-attachment p, .post p, .block.rich_text p .tabContent .overview p {
   font-size: 17px;
 }
 
@@ -265,7 +265,7 @@ body {
   text-decoration: underline;
 }
 
-.lecture-attachment .tabcontent a {
+.lecture-attachment .tabContent a {
   color: #FFF;
   text-decoration: underline;
 }
@@ -317,12 +317,12 @@ body {
 
 
 
-/* Prepent "Get Started" before the Module title */
+/* Prepend "Get Started" before the Module title */
 /*.revamped_lecture_player .course-mainbar .course-section .section-title:before {*/
 /*  content: "Get Started \A";*/
 /*  display: block;*/
 /*  font-size: 20px;*/
-/*  white-space: preline;*/
+/*  white-space: pre-line;*/
 /* }*/
 
 /******************************************************/

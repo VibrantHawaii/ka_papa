@@ -1,41 +1,42 @@
 <script type="text/javascript">
-function openFirstTab(evt, tabName, tabClass) {
+  function openFirstTab(evt, tabName, tabClass) {
     openTab(evt, tabName);
-    var firstTab = document.getElementsByClassName(tabClass);
+    let firstTab = document.getElementsByClassName(tabClass);
     firstTab[0].className += " active";
-}
-
-function openTab(evt, tabName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
   }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  function openTab(evt, tabName) {
+    // Declare all variables
+    let i, tabContent, tabLinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabContent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tabLinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-function openDropdown(evt, dropdownId) {
-  if (dropdownId == 'communityDiscussion') {
-    var targetDropdown = document.getElementsByClassName("comments");
-    targetDropdown[0].style.display = "block";
+  function openDropdown(evt, dropdownId) {
+    let targetDropdown;
+    if (dropdownId === 'communityDiscussion') {
+      targetDropdown = document.getElementsByClassName("comments");
+      targetDropdown[0].style.display = "block";
+    }
+    if (dropdownId === 'recommendedResources') {
+      targetDropdown = document.getElementsByClassName("recommendedResourcesContent");
+      targetDropdown[0].style.display = "block";
+    }
   }
-  if (dropdownId == 'recommendedResources') {
-    var targetDropdown = document.getElementsByClassName("recommendedResourcesContent");
-    targetDropdown[0].style.display = "block";
-  }
-}
 
 
 </script>
@@ -48,31 +49,39 @@ function openDropdown(evt, dropdownId) {
 </div>
 
 <!-- Tab content -->
-<div id="overview" class="tabcontent">
-  <h3 class="tabtitle">Overview</h3>
+<div id="overview" class="tabContent">
+  <h3 class="tabTitle">Overview</h3>
   <p>This is the lesson overview</p>
 </div>
 
-<div id="transcript" class="tabcontent">
-  <h3 class="tabtitle">Transcript</h3>
+<div id="transcript" class="tabContent">
+  <h3 class="tabTitle">Transcript</h3>
   <p>Download the transcript in PDF form.</p>
-  <a class="downloadBtn" data-cpl-tooltip="Download the transcript in PDF form." data-vpl-tooltip="Download the transcript in PDF form." href="https://static.wixstatic.com/media/3b5b38_df02baa96b814125858d9ab52991e085~mv2.png" id="download_transcript_button" role="button">
-      <span class="nav-text">Download Transcript</span>
-    </a>
+  <a class="downloadBtn" data-cpl-tooltip="Download the transcript in PDF form."
+     data-vpl-tooltip="Download the transcript in PDF form."
+     href="https://static.wixstatic.com/media/3b5b38_df02baa96b814125858d9ab52991e085~mv2.png"
+     id="download_transcript_button" role="button">
+    <span class="nav-text">Download Transcript</span>
+  </a>
 </div>
 
-<div id="audio" class="tabcontent">
-  <h3 class="tabtitle">Audio</h3>
+<div id="audio" class="tabContent">
+  <h3 class="tabTitle">Audio</h3>
   <p>Download the audio in MP3 format.</p>
-  <a class="downloadBtn" data-cpl-tooltip="Download the audio in MP3 format." data-vpl-tooltip="Download the audio in MP3 format." href="https://static.wixstatic.com/mp3/3b5b38_b350fc57e6d642a88fe1abb19b4456f4.mp3" id="download_audio_button" role="button">
-      <span class="nav-text">Download Audio</span>
-    </a>
+  <a class="downloadBtn" data-cpl-tooltip="Download the audio in MP3 format."
+     data-vpl-tooltip="Download the audio in MP3 format."
+     href="https://static.wixstatic.com/mp3/3b5b38_b350fc57e6d642a88fe1abb19b4456f4.mp3" id="download_audio_button"
+     role="button">
+    <span class="nav-text">Download Audio</span>
+  </a>
 </div>
 
 <body onload="openFirstTab(event, 'overview', 'tablinks overview')">
 
 <div id="communityDiscussion" class="dropdownSection">
   <div class="dropdownTitle">
-    <button class="dropdownLinks communityDiscussion" onclick="openDropdown(event, 'communityDiscussion')">Community Discussion ▼</i></button>
+    <button class="dropdownLinks communityDiscussion" onclick="openDropdown(event, 'communityDiscussion')">Community
+      Discussion ▼
+    </button>
   </div>
 </div>
