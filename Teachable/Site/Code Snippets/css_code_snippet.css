@@ -1,5 +1,5 @@
 body {
-  font-family: 'opensans';
+  font-family: 'opensans', sans-serif;
 }
 
 .revamped_lecture_player .lecture-page-layout {
@@ -37,11 +37,11 @@ body {
 }
 
 .revamped_lecture_player .course-section ul.section-list .section-item.incomplete .status-icon {
-  box-shadow: inset 0px 0px 0px 2px #FFFFFF;
+  box-shadow: inset 0 0 0 2px #FFFFFF;
 }
 
 .revamped_lecture_player .course-section ul.section-list .section-item.completed .status-icon {
-  box-shadow: inset 0px 0px 0px 2px #FFFFFF;
+  box-shadow: inset 0 0 0 2px #FFFFFF;
 }
 
 .revamped_lecture_player .course-section ul.section-list .section-item .item .lecture-icon {
@@ -49,7 +49,7 @@ body {
 }
 
 .revamped_lecture_player .course-sidebar .row.lecture-sidebar .course-section .title-container {
-  border-left: 0px;
+  border-left: 0;
 }
 
 .revamped_lecture_player .lecture-content.course-mainbar {
@@ -131,13 +131,6 @@ body {
   font-size: 26px;
 }
 
-.body-content-view .revamped_lecture_player .course-mainbar h2.section-title:before {
-  content: "FOOBAR \A";
-  display: block;
-  font-size: 20px;
-  white-space: preline;
-}
-
 .revamped_lecture_player .course-sidebar h2 {
   display: none;
 }
@@ -206,7 +199,7 @@ body {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
-  height: 24;
+  height: 64px;
   line-height: 24px;
   padding: 20px;
   margin-bottom: 20px;
@@ -228,16 +221,13 @@ body {
 }
 
 .download_all_resources_wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 40px;
+  margin: 40px auto 20px;
   display: table;
 }
 
 .revamped_lecture_player .lecture-content .lecture-attachment  {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .revamped_lecture_player .lecture-content .lecture-attachment .comments {
