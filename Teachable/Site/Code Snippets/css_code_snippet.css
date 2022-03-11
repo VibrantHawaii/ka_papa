@@ -56,6 +56,8 @@ body {
   background: #F7E7D5;
   padding-left: 100px;
   padding-right: 100px;
+  display: table;
+  height: max-content;
 }
 
 .revamped_lecture_player .lecture-content .lecture-attachment .attachment-block-wrapper.comments {
@@ -167,7 +169,7 @@ body {
   background-color: #ddd;
 }
 
-/* Create an active/current tabLink class */
+/* Create an active/current tablink class */
 .tab button.active {
   background-color: #F7E7D5;
   text-decoration: underline;
@@ -322,7 +324,7 @@ body {
 /*  content: "Get Started \A";*/
 /*  display: block;*/
 /*  font-size: 20px;*/
-/*  white-space: pre-line;*/
+/*  white-space: preline;*/
 /* }*/
 
 /******************************************************/
@@ -356,7 +358,6 @@ body {
   margin-top: 40px;
 }
 
-/* Custom CSS */
 /* Dropdown sections: content once expanded/dropped-down */
 .dropdownSection .dropdownContent {
   background-color: #E1CCB7;
@@ -378,6 +379,17 @@ body {
 /* Download Audio button */
 #audio .downloadBtn {
   display: inline-block;
+}
+
+/* Reorder the quiz below the comments section (anchor to the foot of the page */
+.lecture-attachment-type-quiz {
+  display: table-footer-group;
+}
+
+/* Spacing around the quiz*/
+.quiz-content {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /******************************************************/
