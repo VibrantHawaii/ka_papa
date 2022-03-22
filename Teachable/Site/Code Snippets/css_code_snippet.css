@@ -309,7 +309,7 @@ body {
 /* Reposition the section showing navigation to the next lecture "Start next lesson" */
 .revamped_lecture_player .course-mainbar .next-lecture-wrapper {
   background-color: #E1CCB7;
-  margin-top: 0;
+  margin-top: 0px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-top: 20px;
@@ -326,19 +326,21 @@ body {
 }
 
 
-
-/* Prepend "Get Started" before the Module title */
-/*.revamped_lecture_player .course-mainbar .course-section .section-title:before {*/
-/*  content: "Get Started \A";*/
-/*  display: block;*/
-/*  font-size: 20px;*/
-/*  white-space: preline;*/
-/* }*/
-
 /******************************************************/
 /* Lecture Page */
-.lecture-name {
+/* Sidebar progress area while scrolled down the page */
+.revamped_lecture_player .course-sidebar .course-progress.lecture-page.sticky {
+  background-color: #302C2D !important;
+}
+
+/* Active lecture name */
+.revamped_lecture_player .course-mainbar .lecture-name {
   color: black;
+}
+
+.revamped_lecture_player .course-sidebar .row.lecture-sidebar .course-section {
+  background-color: #302C2D;
+  margin-bottom: 10px;
 }
 
 .revamped_lecture_player .course-sidebar .row.lecture-sidebar .course-section .section-title {
@@ -347,9 +349,7 @@ body {
   color: #FFFFFF;
   font-size: 24px;
   position: relative;
-  margin-top: -240px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 
 
@@ -358,7 +358,7 @@ body {
   content: "\A Lessons";
   display: block;
   font-size: 14px;
-  padding-top: 40px;
+  padding-top: 20px;
   text-transform: uppercase;
 }
 
