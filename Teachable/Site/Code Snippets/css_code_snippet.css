@@ -31,6 +31,15 @@ body {
   color: #FFFFFF;
 }
 
+.revamped_lecture_player .enrolled-course-layout {
+  background: #F7E7D5;
+}
+
+.revamped_lecture_player .course-section {
+  padding-bottom: 20px;
+  background: #F7E7D5;
+}
+
 .revamped_lecture_player .course-section ul.section-list .section-item.next-lecture .item
 {
   color: #FFFFFF;
@@ -88,7 +97,6 @@ body {
 
 .revamped_lecture_player .course-mainbar .course-section ul.section-list {
   position: relative;
-  margin-top: 70px;
 }
 
 .revamped_lecture_player .lecture-sidebar .course-section ul.section-list li.selected .section-item .item {
@@ -301,10 +309,10 @@ body {
 /* Reposition the section showing navigation to the next lecture "Start next lesson" */
 .revamped_lecture_player .course-mainbar .next-lecture-wrapper {
   background-color: #E1CCB7;
-  margin-top: 38px;
+  margin-top: 0;
   padding-bottom: 20px;
   padding-left: 20px;
-  padding-top: 70px;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -312,9 +320,9 @@ body {
 .revamped_lecture_player .course-mainbar .course-section .section-title {
   background-color: #E1CCB7;
   position: relative;
-  margin-top: -240px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  margin-top: -10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
@@ -329,6 +337,10 @@ body {
 
 /******************************************************/
 /* Lecture Page */
+.lecture-name {
+  color: black;
+}
+
 .revamped_lecture_player .course-sidebar .row.lecture-sidebar .course-section .section-title {
   /* lesson page, course name */
   background-color: #302C2D;
