@@ -27,6 +27,14 @@ body {
   background: #FFFFFF;
 }
 
+body .row.course-list .progressbar {
+  background-color: #d3d3d3;
+}
+
+body .row.course-list .progressbar .progressbar-fill {
+  background: #666666;
+}
+
 .course-sidebar-head {
   color: #FFFFFF;
 }
@@ -282,7 +290,7 @@ body {
 
 .lecture-attachment .downloadBtn a {
   color: #FFF;
-  text-decoration: normal;
+  text-decoration: none;
 }
 
 .lecture-attachment-type-video {
@@ -309,7 +317,7 @@ body {
 /* Reposition the section showing navigation to the next lecture "Start next lesson" */
 .revamped_lecture_player .course-mainbar .next-lecture-wrapper {
   background-color: #E1CCB7;
-  margin-top: 0px;
+  margin-top: 0;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-top: 20px;
@@ -349,7 +357,7 @@ body {
   color: #FFFFFF;
   font-size: 24px;
   position: relative;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 
