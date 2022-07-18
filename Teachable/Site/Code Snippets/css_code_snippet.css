@@ -412,6 +412,11 @@ body .row.course-list .progressbar .progressbar-fill {
   margin-bottom: 40px;
 }
 
+/* Hide additional "Complete and Continue" button at bottom of the lecture content */
+#lecture_content_complete_button {
+  display: none
+}
+
 /******************************************************/
 /* Course Sales Page */
 /* Buttons */
